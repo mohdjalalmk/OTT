@@ -11,20 +11,28 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.jalalmk.OTT"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.jalalmk.OTT",
+      "config": {
+        "cleartextTraffic": true
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "50a1ea5b-cfc5-4a21-8835-a2bd21f852c4"
+      }
     }
   }
 }
