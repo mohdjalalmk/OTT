@@ -11,7 +11,7 @@ const MovieTile= ({ posterUrl,movieNmae }) => {
 
     return (
         <Pressable style={styles.tile}onPress={onMoviePress}>
-            <Image style={styles.image} source={getPosterImage(posterUrl)} />
+            <Image style={styles.image} source={getPosterImage(posterUrl)} testID="movie-tile-image"/>
             <Text style={styles.movieName} numberOfLines={1} >{movieNmae}</Text>
         </Pressable>
     )
@@ -19,15 +19,16 @@ const MovieTile= ({ posterUrl,movieNmae }) => {
 
 const styles = StyleSheet.create({
     tile: {
-        marginBottom:10,
-        width:'33%'
+        flex:1,
+        marginBottom:25,
+        // width:'33%'
     },
     image: {
-        width: 100,
+        width: 110,
         height: 170,
         resizeMode: 'cover',
         borderRadius: 5,
-        margin: 5,
+        // margin: 5,
     },
     title: {
         fontSize: 20,
@@ -35,7 +36,8 @@ const styles = StyleSheet.create({
     },
     movieName:{
         color:'#fff',
-        marginLeft:5
+        marginTop:10
+        // marginLeft:5
     }
 });
 

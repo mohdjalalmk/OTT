@@ -75,12 +75,12 @@ const styles = StyleSheet.create({
     borderRadius: 5,
   },
   back: {
-    width: 25,
-    height: 25,
+    width: 20,
+    height: 20,
   },
   search: {
-    width: 25,
-    height: 25,
+    width: 20,
+    height: 20,
   },
   title: {
     color: "#fff",
@@ -91,6 +91,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     height: 70,
+    paddingHorizontal:15
   },
   backArrowView:{
      flexDirection: "row", 

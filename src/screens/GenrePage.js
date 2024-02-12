@@ -61,44 +61,7 @@ const GenrePage = () => {
           // Handle error appropriately
         });
     }
-  };
-
-//   const getData = () => {
-//     console.log(offset);
-//     if (!loading && !isListEnd) {
-//       console.log("getData");
-//       setLoading(true);
-//       fetch("http://demo0198957.mockable.io/page" + offset)
-//         .then((response) => response.json())
-//         .then((responseJson) => {
-//           console.log("responseJson:", responseJson);
-
-//           console.log(responseJson);
-//           if (responseJson.page.contentItems.content.length > 0) {
-//             console.warn("here");
-//             setOffset(offset + 1);
-//             //After the response increasing the offset for the next API call.
-//             setOriginalMovies([
-//               ...originalMovies,
-//               ...responseJson.page.contentItems.content,
-//             ]);
-//             setMovies([
-//               ...originalMovies,
-//               ...responseJson.page.contentItems.content,
-//             ]);
-//             setLoading(false);
-//           } else {
-//             setIsListEnd(true);
-//             setLoading(false);
-//           }
-//         })
-//         .catch((error) => {
-//           console.error(error);
-//         });
-//     }
-//   };
-
-  
+  };  
 
   const handleSearch = (text) => {
     setSearchText(text);

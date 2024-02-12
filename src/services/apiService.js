@@ -1,7 +1,7 @@
 // apiService.js
 const apiService = async (offset) => {
     try {
-        const response = await fetch('http://demo0198957.mockable.io/page' + offset);
+        const response = await fetch('https://demo0198957.mockable.io/page' + offset);
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
